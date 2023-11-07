@@ -1,0 +1,121 @@
+.functional {
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding: 0;
+  @media(max-width: 1500px){
+    // padding-top: 50px;
+    height: auto !important;
+    // padding-bottom: 50px;
+  }
+
+  &Title {
+    margin-bottom: 10px;
+  }
+
+
+  &Descr {
+    font-size: 40px;
+    color: #333;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    @media(max-width: 1550px){
+      font-size: 32px;
+      line-height: 39px;
+    }
+    @media(max-width: 1199px){
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  &Subtitle {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 40px;
+    @media(max-width: 1550px){
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+    @media(max-width: 1199px){
+      font-size: 16px;
+      line-height: normal;
+      margin-top: 11px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 400px;
+      background-color: #b4c4d3;
+      height: 3px;
+      @media(max-width: 1199px){
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section--blue {
+  .functionalDescr {
+    color: #fff;
+    position: relative;
+    padding-bottom: 40px;
+    @media(max-width: 1550px){
+      padding-bottom: 20px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 400px;
+      background-color: #b4c4d3;
+      height: 3px;
+      @media(max-width: 1199px){
+        width: 100%;
+      }
+    }
+  }
+}
+
+.functionalLetter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
+  z-index: -1;
+}
+.functionalDescrThin {
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 40px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    background-color: #b4c4d3;
+    height: 3px;
+    @media(max-width: 1199px){
+      width: 100%;
+    }
+  }
+}

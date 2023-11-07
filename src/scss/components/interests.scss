@@ -1,0 +1,88 @@
+.interests {
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right center;
+  padding: 0;
+  @media(max-width: 1500px){
+    height: auto !important;
+  }
+  @media(max-width: 1199px) {
+    // padding-top: 50px;
+    background-image: none !important;
+   
+  }
+
+  .section-image--lg {
+    min-height: 600px;
+
+    @media(max-width: 1199px) {
+      min-height: unset;
+    }
+  }
+
+  .content-slider {
+    min-height: 600px;
+  }
+
+  &Descr {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #fff;
+    position: relative;
+    padding-bottom: 40px;
+    width: fit-content;
+
+    @media(max-width: 1440px) {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 30px;
+      padding-bottom: 25px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 400px;
+      background-color: #fff;
+      height: 3px;
+
+      @media(max-width: 1199px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .container {
+    // position: relative;
+    // z-index: 1;
+  }
+}
+
+.interestsLetter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right;
+  z-index: -1;
+}
+
+.interestsBg {
+  background-color: #0353a1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.interestsDescrRegular {
+  font-weight: 400;
+}
