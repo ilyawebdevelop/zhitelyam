@@ -20,35 +20,8 @@ window.onload = function () {
     scrollHorizontally: true,
     fitToSection: false,
     navigation: false,
-
-    afterSlideLoad: function (origin, destination, direction) {
-      // setCounter();
-    },
-    afterRender: function () {
-      // setCounter();
-    },
-    afterLoad: function (origin, destination, direction, trigger) {
-      // setCounter();
-    },
   });
-
-  // function setCounter() {
-  //   var sectionItem = fullpage_api.getActiveSection().item;
-  //   var numSlides = sectionItem.querySelectorAll(".fp-slide").length;
-  //   var currentSlideWrapper = sectionItem.querySelector(".counter");
-  //   if (currentSlideWrapper) {
-  //     var slideNumber = fullpage_api.getActiveSlide().index + 1;
-  //   }
-  //   if (currentSlideWrapper) {
-  //     currentSlideWrapper.innerHTML = "0" + slideNumber + "<span> /" + ' 0' + numSlides + "</span>";
-  //   }
-  // }
-
-  // $('.navArrowPrev').on('click', function () { fullpage_api.moveSlideLeft(); });
-  // $('.navArrowNext').on('click', function () { fullpage_api.moveSlideRight(); });
-
 }
-
 
 
 // Инициализация слайдера content-slider
@@ -56,12 +29,12 @@ document.querySelectorAll('.content-slider').forEach(n => {
   const mySwiperContent = new Swiper(n, {
     slidesPerView: 1,
     spaceBetween: 20,
-    speed: 600,   
+    speed: 600,
     effect: 'fade',
     fadeEffect: {
       crossFade: true
     },
-    autoHeight: true,   
+    autoHeight: true,
     on: {
       slideChange: function () {
         var slides_count = n.querySelectorAll(".swiper-slide"); // <- add this

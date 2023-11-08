@@ -40,6 +40,12 @@
 }
 .navArrow {
   cursor: pointer;
+	svg {
+		width: 130px;
+		height: 18px;
+		fill: #000;
+		stroke: #fff;
+	}
 }
 .fp-arrow {
   display: none;
