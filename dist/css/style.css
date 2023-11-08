@@ -11582,6 +11582,10 @@ h5 {
   }
 }
 
+.formInput {
+  font-size: 16px;
+}
+
 .contentTextLg {
   font-size: 30px;
   line-height: normal;
@@ -11905,12 +11909,16 @@ h5 {
 .introLink {
   font-size: 14px;
   color: #fff;
-  background: url("../img/icons/arrowLink.png") no-repeat right center/20px;
+  background: url("../img/icons/arrowLink.png") no-repeat right top 6px/20px;
   width: fit-content;
   padding-right: 35px;
   margin-top: 50px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  transition: background-position 0.2s linear;
+}
+.introLink:hover {
+  background-position: right 5px top 6px;
 }
 @media (max-width: 1550px) {
   .introLink {
@@ -12049,8 +12057,20 @@ h5 {
 .navArrow svg {
   width: 130px;
   height: 18px;
-  fill: #000;
-  stroke: #fff;
+  fill: #A5AEBB;
+  transition: fill 0.2s linear;
+}
+@media (max-width: 1199px) {
+  .navArrow svg {
+    width: 90px;
+  }
+}
+.navArrow:hover svg {
+  fill: #0353a1;
+}
+
+.navW--white .navArrow:hover svg {
+  fill: #fff;
 }
 
 .fp-arrow {

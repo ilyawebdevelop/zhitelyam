@@ -69,12 +69,16 @@
   &Link {
     font-size: 14px;
     color: #fff;
-    background: url('@img/icons/arrowLink.png') no-repeat right center / 20px;
+    background: url('@img/icons/arrowLink.png') no-repeat right top 6px / 20px;
     width: fit-content;
     padding-right: 35px;
     margin-top: 50px;
     text-transform: uppercase;
     letter-spacing: .1em;
+    transition: background-position .2s linear;
+    &:hover {
+      background-position: right 5px top 6px;
+    }
     @media(max-width: 1550px){
       font-size: 12px;
       margin-top: 25px;

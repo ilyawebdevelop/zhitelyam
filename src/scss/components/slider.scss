@@ -43,8 +43,25 @@
 	svg {
 		width: 130px;
 		height: 18px;
-		fill: #000;
-		stroke: #fff;
+		fill: #A5AEBB;		
+		transition: fill .2s linear;
+		@media(max-width: 1199px){
+			width: 90px;
+		}
+	}
+	&:hover {
+		svg {
+			fill: #0353a1;
+		}
+	}
+}
+.navW--white {
+	.navArrow {		
+		&:hover {
+			svg {
+				fill: #fff;
+			}
+		}
 	}
 }
 .fp-arrow {
