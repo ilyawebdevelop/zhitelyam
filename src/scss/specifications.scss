@@ -22,10 +22,13 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  @media(max-width: 1600px){
+    font-size: 14px;
+  }
 
   @media (max-width: 991px) {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -458,7 +461,7 @@ h5 {
 .contentTextLg {
   font-size: 30px;
   line-height: normal;
-  @media(max-width: 1500px){
+  @media(max-width: 1600px){
     font-size: 20px;
   }
   @media(max-width: 1199px){

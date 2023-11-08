@@ -11152,11 +11152,17 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+@media (max-width: 1600px) {
+  html,
+body {
+    font-size: 14px;
+  }
+}
 @media (max-width: 991px) {
   html,
 body {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -11580,7 +11586,7 @@ h5 {
   font-size: 30px;
   line-height: normal;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   .contentTextLg {
     font-size: 20px;
   }
@@ -11832,8 +11838,14 @@ h5 {
 }
 @media (max-width: 1550px) {
   .introTitle {
-    font-size: 45px;
+    font-size: 65px;
     line-height: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .introTitle {
+    font-size: 45px;
+    line-height: 45px;
   }
 }
 .introTitleOpacity {
