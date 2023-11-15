@@ -16,7 +16,7 @@ window.onload = function () {
   new fullpage('#fullpage', {
     anchors: ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7'],
     menu: '#menu',
-    autoScrolling: false,
+    autoScrolling: true,
     scrollHorizontally: true,
     fitToSection: false,
     navigation: false,
@@ -75,3 +75,36 @@ document.querySelectorAll('.content-slider').forEach(n => {
   change();
 });
 
+let introCatalogBtn = document.querySelector('.hamburger');
+let introCatalog = document.querySelector('.introCatalog');
+let introCatalogClose = document.querySelector('.introCatalogClose');
+let bodyEl = document.querySelector('body');
+
+introCatalogBtn.addEventListener('click', () => {
+  introCatalog.classList.add('active');
+  bodyEl.classList.add('hidden');
+});
+introCatalogClose.addEventListener('click', () => {
+  introCatalog.classList.remove('active');
+  bodyEl.classList.remove('hidden');
+});
+
+// Menu show or hide
+document.addEventListener('click', function (e) {
+  const target = e.target;
+  const its_introCatalogBtn = target == introCatalogBtn || introCatalogBtn.contains(target);
+  const its_CatalogContent = target == introCatalog || introCatalog.contains(target);
+
+  if (!its_introCatalogBtn && !its_CatalogContent) {
+    introCatalog.classList.remove('active');
+      introCatalogBtn.classList.remove('active');
+      bodyEl.classList.remove('hidden');
+  }
+});
+
+// close menu in Landing page
+$(document).on("click", ".introNavList li a", function (e) {
+  $('.introCatalog').removeClass('active');
+  $('body').removeClass('hidden');
+  // $('#nav-icon3').removeClass('open');
+});

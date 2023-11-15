@@ -11606,10 +11606,6 @@ h5 {
   }
 }
 
-#fullpage {
-  overflow: hidden;
-}
-
 .itemSquare {
   display: flex;
   align-items: center;
@@ -11992,6 +11988,38 @@ h5 {
   .intro .containerLgW {
     row-gap: 1vh;
   }
+}
+.introCatalog {
+  background-color: #0353a1;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+  padding-top: 40px;
+  z-index: 2;
+  overflow-y: scroll;
+  display: none;
+}
+.introCatalog.active {
+  display: block;
+  -webkit-animation: shows 0.3s;
+  animation: shows 0.3s;
+}
+.introCatalogClose img {
+  margin-left: auto;
+}
+.introCatalog .containerLgW {
+  row-gap: 50px;
+}
+.introNavList li {
+  margin-bottom: 50px;
+}
+.introNavList li a {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 230px;
 }
 
 @media (max-width: 1199px) {
