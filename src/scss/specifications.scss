@@ -71,14 +71,14 @@ section {
     }
   }
 
-  .fp-overflow {
+  // .fp-overflow {
 
 
-    @media(max-width: 1500px) {
-      overflow-y: unset !important;
-      max-height: unset !important;
-    }
-  }
+  //   @media(max-width: 1500px) {
+  //     overflow-y: unset !important;
+  //     max-height: unset !important;
+  //   }
+  // }
 
 }
 
@@ -537,6 +537,9 @@ h5 {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @media(max-width: 767px){
+        padding-bottom: 220px;
+      }
     }
   }
 

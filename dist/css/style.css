@@ -11205,12 +11205,6 @@ section.section-first {
     padding-top: 15px;
   }
 }
-@media (max-width: 1500px) {
-  section .fp-overflow {
-    overflow-y: unset !important;
-    max-height: unset !important;
-  }
-}
 
 @media (max-width: 1199px) {
   .section.effect {
@@ -11636,6 +11630,11 @@ h5 {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .content-slider .swiper-slide .container {
+    padding-bottom: 220px;
+  }
+}
 @media (max-width: 1500px) {
   .content-slider {
     height: auto;
@@ -11810,6 +11809,11 @@ h5 {
 @media (max-width: 1199px) {
   .navW {
     max-width: 305px;
+  }
+}
+@media (max-width: 767px) {
+  .navW {
+    bottom: 140px;
   }
 }
 @media (max-width: 1199px) {
@@ -11996,7 +12000,7 @@ h5 {
   top: 0;
   width: auto;
   height: 100%;
-  padding-top: 40px;
+  padding-top: 47px;
   z-index: 2;
   overflow-y: scroll;
   display: none;
@@ -12011,9 +12015,15 @@ h5 {
 }
 .introCatalog .containerLgW {
   row-gap: 50px;
+  padding-right: 35px;
+}
+@media (max-width: 767px) {
+  .introCatalog .containerLgW {
+    padding-right: 20px;
+  }
 }
 .introNavList li {
-  margin-bottom: 50px;
+  margin-bottom: 3vh;
 }
 .introNavList li a {
   color: #fff;
@@ -12451,6 +12461,11 @@ h5 {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+@media (max-width: 767px) {
+  .better .container {
+    padding-bottom: 220px;
+  }
+}
 @media (max-width: 1500px) {
   .better {
     height: auto !important;
@@ -12645,7 +12660,7 @@ h5 {
   .contacts .copyright {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
   }
 }
 

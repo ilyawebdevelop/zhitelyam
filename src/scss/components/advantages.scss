@@ -29,12 +29,17 @@
 .better {
   padding-bottom: 20px;
   padding-top: 20px;
+  .container {
+    @media(max-width: 767px){
+      padding-bottom: 220px;
+    }
+  }
   @media(max-width: 1500px){
     height: auto !important;
   }
   @media(max-width: 1199px) {
     padding-top: 60px;
-    padding-bottom: 60px;
-   
+    padding-bottom: 60px;   
   }
+
 }

@@ -163,7 +163,7 @@
     top: 0;
     width: auto;
     height: 100%;
-    padding-top: 40px;
+    padding-top: 47px;
     z-index: 2;
     overflow-y: scroll;
     display: none;
@@ -179,13 +179,18 @@
     }
     .containerLgW {
       row-gap: 50px;
+      padding-right: 35px;
+      @media(max-width: 767px){
+        padding-right: 20px;
+      }
     }
   }
 
   &Nav {
     &List {
       li {
-        margin-bottom: 50px;
+        margin-bottom: 3vh;
+  
         a {
           color: #fff;
           text-transform: uppercase;

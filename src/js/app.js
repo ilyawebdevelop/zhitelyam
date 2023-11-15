@@ -15,13 +15,15 @@ window.onload = function () {
 
   new fullpage('#fullpage', {
     anchors: ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7'],
-    menu: '#menu',
+    menu: '.menu',
     autoScrolling: true,
     scrollHorizontally: true,
     fitToSection: false,
-    navigation: false,
+    navigation: false,   
+    // responsiveWidth: 768
   });
 }
+
 
 
 // Инициализация слайдера content-slider

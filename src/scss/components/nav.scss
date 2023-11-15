@@ -158,6 +158,9 @@
   @media(max-width: 1199px) {
     max-width: 305px;
   }
+@media(max-width: 767px){
+  bottom: 140px;
+}
 
   img {
     @media(max-width: 1199px) {
