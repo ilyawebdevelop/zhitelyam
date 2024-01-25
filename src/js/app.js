@@ -3,6 +3,7 @@ import "./modules/jquery-3.6.1.min.js";
 import "./modules/fullpage.min.js";
 import "./modules/bootstrap.bundle.min.js";
 import './components.js';
+import "./modules/video.min.js";
 
 flsFunctions.isWebp();
 
@@ -13,17 +14,15 @@ Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Sc
 
 window.onload = function () {
 
+
   var myFullpage = new fullpage('#fullpage', {
     anchors: ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7'],
     menu: '.menu',
-    autoScrolling: true,
+    autoScrolling: true,   
     scrollHorizontally: true,
     fitToSection: false,
     navigation: false,
     // responsiveWidth: 768
-    beforeLeave: function (origin) {
-      console.log(origin);
-    },
   });
 
 
@@ -48,16 +47,12 @@ window.onload = function () {
           var slides_count = n.querySelectorAll(".swiper-slide"); // <- add this
           let offer = n.closest('.section').querySelector('.counter');
           offer.innerHTML = '0' + (this.activeIndex + 1) + '' + `<span> /` + ' 0' + (slides_count.length) + '</span>';
-          
-          console.log(this.activeIndex);
           myFullpage.setAllowScrolling(false);
         },
-        slideNextTransitionEnd: function(){
-          console.log('123');
+        slideNextTransitionEnd: function () {
           myFullpage.setAllowScrolling(true);
         },
-        slidePrevTransitionEnd: function(){
-          console.log('123');
+        slidePrevTransitionEnd: function () {
           myFullpage.setAllowScrolling(true);
         },
       },
@@ -80,7 +75,6 @@ window.onload = function () {
       },
     });
 
-
     function change() {
 
       setTimeout(function () {
@@ -94,14 +88,7 @@ window.onload = function () {
     change();
   });
 
-
 }
-
-
-
-
-
-
 
 
 let introCatalogBtn = document.querySelector('.hamburger');
@@ -137,3 +124,4 @@ $(document).on("click", ".introNavList li a", function (e) {
   $('body').removeClass('hidden');
   // $('#nav-icon3').removeClass('open');
 });
+
