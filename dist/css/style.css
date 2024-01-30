@@ -13801,6 +13801,17 @@ h5 {
   align-items: center;
 }
 
+.videoLgW .video-js {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(calc(-50% - 3vw));
+  max-width: 40vw;
+  height: 29vw;
+  z-index: 1;
+  width: 35vw;
+}
+
 .contactsFormBtn {
   background-color: #ff4200;
   height: 50px;
