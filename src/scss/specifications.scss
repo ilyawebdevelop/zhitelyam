@@ -561,7 +561,13 @@ h5 {
 }
 
 .videoMobileBorder {
-  @media(max-width: 767px){
+  min-width: 500px;
+  width: 500px;
+  @media(max-width: 1230px){
+    min-width: 450px;
+    width: 450px;
+  }
+  @media(max-width: 767px) {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -570,15 +576,16 @@ h5 {
 
 .videoMobileW {
   position: relative;
+  right: 70px;
 }
 
 .videoMobileW {
   .video-js {
-    width: calc(100% - 155px);
-    height: calc(100% - 52px);
+    width: calc(100% - 87px);
+    height: calc(100% - 71px);
     top: calc(50% - 2px);
     transform: translateY(-50%);
-    left: 0;
+    left: 106px;
     right: 0;
     object-fit: contain;
     max-width: 40vw;
@@ -589,18 +596,30 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 24px;
-    // overflow: hidden;
-    @media(max-width: 1199px){
-      width: calc(100% - 121px);
-      height: calc(100% - 39px);
+    @media(max-width: 1250px){
+      width: 100%;
     }
-    @media(max-width: 991px){
+    @media(max-width: 1230px){
+      left: 94px;
+      width: calc(100% - 29px);
+      height: calc(100% - 65px);
+    }
+
+    // overflow: hidden;
+    @media(max-width: 1199px) {
+      left: 95px;
+      width: calc(100% - 32px);
+      height: calc(100% - 61px);
+    }
+
+    @media(max-width: 991px) {
       width: calc(100% - 88px);
       height: calc(100% - 29px);
       border-radius: 10px;
       top: 50%;
     }
-    @media(max-width: 767px){
+
+    @media(max-width: 767px) {
       height: 370px;
       top: calc(50% - 2px);
       min-width: 177px;
@@ -615,17 +634,21 @@ h5 {
         transition: .2s linear;
       }
     }
+
     .vjs-tech {
-      border-radius: 24px;       
-      right: -1px;    
+      border-radius: 24px;
+      right: -1px;
       object-fit: cover;
-      @media(max-width: 1199px){
+
+      @media(max-width: 1199px) {
         border-radius: 20px;
       }
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         border-radius: 10px;
       }
-      @media(max-width: 767px){
+
+      @media(max-width: 767px) {
         border-radius: 15px
       }
     }
@@ -644,11 +667,12 @@ h5 {
       margin-top: 0;
       top: 50%;
       transform: translateY(-50%);
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         font-size: 35px;
         width: 60px;
         height: 60px;
-      }    
+      }
 
       .vjs-icon-placeholder:before {
         font-size: 55px;
