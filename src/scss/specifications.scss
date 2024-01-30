@@ -699,6 +699,31 @@ h5 {
     height: 29vw;
     z-index: 1;
     width: 35vw;
-
+    @media(max-width: 1399px){
+      width: 33vw;
+      height: 27vw;
+    }
+    @media(max-width: 1199px){
+      width: 31vw;
+    }
+    @media(max-width: 1090px){
+      width: 30vw;
+      height: 29vw;
+    }
+    @media(max-width: 991px){
+      width: 31vw;
+      height: 31vw;
+    }
+  }
+  .slide-img {
+    @media(max-width: 1199px){
+      
+    }
+  }
+  .slide-img img {
+    @media(max-width: 991px){
+      min-width: unset;
+      width: 100%;     
+    }
   }
 }

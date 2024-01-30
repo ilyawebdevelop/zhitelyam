@@ -13811,6 +13811,35 @@ h5 {
   z-index: 1;
   width: 35vw;
 }
+@media (max-width: 1399px) {
+  .videoLgW .video-js {
+    width: 33vw;
+    height: 27vw;
+  }
+}
+@media (max-width: 1199px) {
+  .videoLgW .video-js {
+    width: 31vw;
+  }
+}
+@media (max-width: 1090px) {
+  .videoLgW .video-js {
+    width: 30vw;
+    height: 29vw;
+  }
+}
+@media (max-width: 991px) {
+  .videoLgW .video-js {
+    width: 31vw;
+    height: 31vw;
+  }
+}
+@media (max-width: 991px) {
+  .videoLgW .slide-img img {
+    min-width: unset;
+    width: 100%;
+  }
+}
 
 .contactsFormBtn {
   background-color: #ff4200;
