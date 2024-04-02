@@ -12,6 +12,7 @@
     line-height: 60px;
     margin-bottom: 25px;
     letter-spacing: .24em;
+    font-weight: 700;
 
     @media(max-width: 1550px) {
       font-size: 65px;
@@ -22,14 +23,30 @@
       font-size: 45px;
       line-height: 45px;
     }
+    @media(max-width: 620px){
+     font-size: 32px;
+     line-height: 32px; 
+    }
+    @media(max-width: 430px){
+      letter-spacing: .14em;
+    }
+    @media(max-width: 390px){
+      font-size: 29px;
+      line-height: 29px; 
+    }
+    @media(max-width: 350px){
+      font-size: 25px;
+      line-height: 25px; 
+    }
 
     &Opacity {
-      font-size: 60px;
-      line-height: 72px;
-      color: #9aa6b5;
+      font-size: 6vh;
+      line-height: 6vh;
+      color: #d2fff4;
       max-width: 425px;
       text-transform: uppercase;
       margin-right: 125px;
+      margin-bottom: 20px;
 
       @media(max-width: 1550px) {
         font-size: 40px;
@@ -37,7 +54,7 @@
       }
 
       @media(max-width: 1400px) {
-        font-size: 25px;
+        font-size: 30px;
         line-height: normal;
         font-weight: 700;
       }
@@ -55,13 +72,13 @@
     line-height: 28px;
     color: #fff;
     text-transform: uppercase;
-    max-width: 495px;
+    max-width: 647px;
     position: relative;
     padding-bottom: 30px;
     letter-spacing: .14em;
 
     @media(max-width: 1550px) {
-      font-size: 12px;
+      font-size: 14px;
       padding-bottom: 20px;
       line-height: normal;
     }
@@ -83,7 +100,7 @@
     background: url('@img/icons/arrowLink.png') no-repeat right top 6px / 20px;
     width: fit-content;
     padding-right: 35px;
-    margin-top: 50px;
+    margin-top: 30px;
     text-transform: uppercase;
     letter-spacing: .1em;
     transition: background-position .2s linear;
@@ -153,11 +170,12 @@
 
     @media(max-width: 1550px) {
       row-gap: 1vh;
+      padding-left: 17px;
     }
   }
 
   &Catalog {
-    background-color: #0353a1;
+    background-color: #046753;
     position: fixed;
     right: 0;
     top: 0;
@@ -180,9 +198,9 @@
     .containerLgW {
       row-gap: 50px;
       padding-right: 35px;
-      @media(max-width: 767px){
-        padding-right: 20px;
-      }
+      @media(max-width: 1550px){
+        padding-left: 20px;
+      }     
     }
   }
 
@@ -205,5 +223,24 @@
 .introContent .container {
   @media(max-width: 1199px) {
     padding: 0;
+  }
+}
+.intro  .containerLgW {
+  position: relative;
+  z-index: 1;
+}
+.introCount {
+  
+  img {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: calc(100vh - 100px);
+    // width: 600px;
+    // width: 40vw;
+    @media(max-width: 767px){
+      right: -29vw;
+    }
   }
 }
