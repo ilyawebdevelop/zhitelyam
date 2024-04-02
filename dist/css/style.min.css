@@ -13315,7 +13315,7 @@ section.section-first {
   }
 }
 .section-title span {
-  color: #0353a1;
+  color: #046753;
 }
 .section-title--white {
   color: #fff;
@@ -13636,7 +13636,7 @@ h5 {
 }
 
 .itemSquareText span {
-  color: #0353a1;
+  color: #046753;
 }
 
 .content-slider .swiper-slide {
@@ -14364,7 +14364,7 @@ h5 {
   line-height: 60px;
   font-weight: 500;
   letter-spacing: 0.05em;
-  color: #0353a1;
+  color: #046753;
 }
 @media (max-width: 1550px) {
   .counter {
@@ -14398,7 +14398,7 @@ h5 {
   }
 }
 .navArrow:hover svg {
-  fill: #0353a1;
+  fill: #046753;
 }
 
 .navW--white .navArrow:hover svg {
@@ -14480,7 +14480,7 @@ h5 {
 }
 
 .interestsBg {
-  background-color: #0353a1;
+  background-color: #046753;
   width: 100%;
   height: 100%;
   left: 0;
@@ -14699,7 +14699,7 @@ h5 {
   }
 }
 .brandCard {
-  background-color: #0353a1;
+  background-color: #046753;
   padding: 34px 60px 34px 35px;
   color: #fff;
   margin-top: 50px;
