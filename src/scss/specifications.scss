@@ -162,7 +162,7 @@ section {
   line-height: 60px;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 
   @media(max-width: 1550px) {
     font-size: 40px;
@@ -200,7 +200,7 @@ section {
   color: #525252;
   max-width: 620px;
   position: relative;
-  padding-bottom: 45px;
+  padding-bottom: 30px;
 
   @media(max-width: 1550px) {
     max-width: 540px;
@@ -215,7 +215,7 @@ section {
     left: 0;
     width: 400px;
     height: 3px;
-    background-color: #b4c4d3;
+    background-color: #a8d0c7;
 
     @media(max-width: 1199px) {
       width: 100%;
@@ -356,7 +356,7 @@ h5 {
 }
 
 .contentText {
-  padding-top: 40px;
+  padding-top: 30px;
   max-width: 615px;
 
   @media(max-width: 1550px) {
@@ -372,7 +372,7 @@ h5 {
 
     li {
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
         @media(max-width: 1550px) {
           margin-bottom: 15px;
@@ -482,7 +482,7 @@ h5 {
 }
 
 .contentTextLg {
-  font-size: 30px;
+  font-size: 28px;
   line-height: normal;
 
   @media(max-width: 1600px) {
@@ -515,10 +515,18 @@ h5 {
     }
   }
 }
+.itemSquareIcon {
+  background-color: #046753;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 10px;
+}
 
 .itemSquareText {
   span {
     color: #046753;
+    font-weight: 500;
   }
 }
 

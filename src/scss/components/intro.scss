@@ -74,7 +74,7 @@
     text-transform: uppercase;
     max-width: 647px;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     letter-spacing: .14em;
 
     @media(max-width: 1550px) {
@@ -100,7 +100,7 @@
     background: url('@img/icons/arrowLink.png') no-repeat right top 6px / 20px;
     width: fit-content;
     padding-right: 35px;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: .1em;
     transition: background-position .2s linear;
