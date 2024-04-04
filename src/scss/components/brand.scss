@@ -77,3 +77,19 @@
     }
   }
 }
+.brandTitle {
+  position: relative;
+  padding-bottom: 40px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    bottom: 0;
+    width: 400px;
+    background-color: #a8d0c7;
+    height: 3px;
+    @media(max-width: 1199px){
+      width: 100%;
+    }
+  }
+}

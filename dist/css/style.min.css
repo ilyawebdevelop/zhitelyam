@@ -13626,6 +13626,10 @@ h5 {
   column-gap: 20px;
   margin-bottom: 20px;
 }
+.itemSquare--light .itemSquareIcon {
+  background-color: #a8d0c7;
+  padding: 12px;
+}
 
 .itemSquareList {
   margin-top: 50px;
@@ -14721,6 +14725,25 @@ h5 {
   }
 }
 
+.brandTitle {
+  position: relative;
+  padding-bottom: 40px;
+}
+.brandTitle::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  bottom: 0;
+  width: 400px;
+  background-color: #a8d0c7;
+  height: 3px;
+}
+@media (max-width: 1199px) {
+  .brandTitle::after {
+    width: 100%;
+  }
+}
+
 .advantages {
   padding-top: 20px;
 }
@@ -14740,7 +14763,7 @@ h5 {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: right;
+  object-position: center;
   z-index: -1;
 }
 @media (max-width: 1199px) {
