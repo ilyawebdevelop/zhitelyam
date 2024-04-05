@@ -107,6 +107,9 @@
       padding-right: 20px;
       padding-top: 150px;
     }
+    @media(max-width: 575px){
+      padding-top: 230px;
+    }
   }
 
   &Item {

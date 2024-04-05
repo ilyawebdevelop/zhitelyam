@@ -13666,6 +13666,7 @@ h5 {
 @media (max-width: 767px) {
   .content-slider .swiper-slide .container {
     padding-bottom: 220px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 1500px) {
@@ -14915,6 +14916,11 @@ h5 {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 150px;
+  }
+}
+@media (max-width: 575px) {
+  .contacts .mapW {
+    padding-top: 230px;
   }
 }
 .contactsItem {
