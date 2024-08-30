@@ -1,0 +1,45 @@
+.advantages {
+  padding-top: 20px;
+
+  &Title {
+    max-width: 930px;
+
+    @media(max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.betterLetter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right;
+  z-index: -1;
+
+  @media(max-width: 1199px) {
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
+.better {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  .container {
+    @media(max-width: 767px){
+      padding-bottom: 220px;
+    }
+  }
+  @media(max-width: 1500px){
+    height: auto !important;
+  }
+  @media(max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;   
+  }
+
+}

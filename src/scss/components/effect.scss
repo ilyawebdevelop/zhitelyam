@@ -1,0 +1,16 @@
+.effect {
+  background-position: right center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  padding: 0;
+  @media(max-width: 1500px){
+    // padding-top: 60px;
+    height: auto!important;
+  }
+  @media(max-width: 767px){
+   
+  }
+  &Title {
+    max-width: 630px;
+  }
+}

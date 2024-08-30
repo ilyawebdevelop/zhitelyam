@@ -1,0 +1,170 @@
+.menuScroll {
+  position: fixed;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  z-index: 5;
+
+  @media(max-width: 1550px) {
+    row-gap: 17px;
+    left: 18px;
+  }
+
+  @media(max-width: 1199px) {
+    display: none;
+  }
+
+  &Line {
+    height: 0;
+    width: 3px;
+    background-color: #1e4263;
+
+    @media(max-width: 1600px) {
+      display: none;
+    }
+  }
+
+  &Round {
+    width: 15px;
+    height: 15px;
+    background-color: #b4c4d3;
+    border-radius: 50%;
+
+    @media(max-width: 1550px) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &Name {
+    opacity: 0;
+    transition: opacity .2s linear;
+    color: #333333;
+    text-transform: uppercase;
+    position: absolute;
+    top: -5px;
+    max-width: 187px;
+    width: 187px;
+    left: 40px;
+
+    @media(max-width: 1550px) {
+      font-size: 12px;
+      max-width: 135px;
+      line-height: normal;
+      top: -3px;
+    }
+  }
+
+  &Item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    column-gap: 28px;
+
+    &:hover {
+      .menuScrollName {
+        opacity: 1;
+      }
+    }
+
+    &:not(:last-child) {
+      &.active {
+        .menuScrollLine {
+          height: 100px;
+          margin-top: 30px;
+        }
+      }
+    }
+
+    &.active {
+      .menuScrollRound {
+        background-color: #0353a1;
+      }
+
+      .menuScrollName {
+        opacity: 1;
+      }
+    }
+
+    &--white {
+      &.active {
+        .menuScrollRound {
+          background-color: #fff;
+        }
+
+        .menuScrollName {
+          color: #fff;
+        }
+
+        .menuScrollLine {
+          background-color: #fff;
+        }
+
+      }
+    }
+  }
+}
+.fp-viewing-slide1 {
+  .menuScrollItem:hover {
+    .menuScrollName {
+      color: #fff;
+    }
+  }
+}
+.fp-viewing-slide3 {
+  .menuScrollItem:hover {
+    .menuScrollName {
+      color: #fff;
+    }
+  }
+}
+.fp-viewing-slide5 {
+  .menuScrollItem:hover {
+    .menuScrollName {
+      color: #fff;
+    }
+  }
+}
+.fp-viewing-slide7 {
+  .menuScrollItem:hover {
+    .menuScrollName {
+      color: #fff;
+    }
+  }
+}
+.fp-viewing-slide8 {
+  .menuScrollItem:hover {
+    .menuScrollName {
+      color: #fff;
+    }
+  }
+}
+
+.navW {
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  width: 100%;
+  max-width: 700px;
+
+  @media(max-width: 1550px) {
+    max-width: 500px;
+  }
+
+  @media(max-width: 1199px) {
+    max-width: 305px;
+  }
+@media(max-width: 767px){
+  bottom: 140px;
+}
+
+  img {
+    @media(max-width: 1199px) {
+      width: 87px;
+    }
+  }
+}

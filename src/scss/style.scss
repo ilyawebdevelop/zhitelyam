@@ -1,0 +1,38 @@
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// bootstrap v5.0.2
+@import "./bootstrap.min";
+@import "./fullpage.min";
+
+// video-js
+@import "./video-js";
+
+// Базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'specifications';
+
+// Подключения компонентов страницы
+@import "./components/btn";
+@import "./components/burger";
+@import "./components/nav";
+@import "./components/modal";
+@import "./components/tabs";
+@import "./components/header";
+@import "./components/intro";
+@import "./components/effect";
+@import "./components/slider";
+@import "./components/interests";
+@import "./components/functional";
+@import "./components/brand";
+@import "./components/advantages";
+@import "./components/contacts";
+
+
+@import "./components/footer";
+
+
+
