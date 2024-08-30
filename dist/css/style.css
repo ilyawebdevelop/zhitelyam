@@ -14253,6 +14253,10 @@ h5 {
 .introCatalogClose img {
   margin-left: auto;
 }
+.introCatalogClose svg {
+  margin-left: auto;
+  display: block;
+}
 .introCatalog .containerLgW {
   row-gap: 50px;
   padding-right: 35px;
