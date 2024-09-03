@@ -113,18 +113,36 @@ $(document).on("click", ".introNavList li a", function (e) {
 
 
 
-ymaps.ready(init);
-function init() {
-  // Создание карты.
-  var myMap = new ymaps.Map("map", {
-    // Координаты центра карты.
-    // Порядок по умолчанию: «широта, долгота».
-    // Чтобы не определять координаты центра карты вручную,
-    // воспользуйтесь инструментом Определение координат.
-    center: [55.76, 37.64],
-    // Уровень масштабирования. Допустимые значения:
-    // от 0 (весь мир) до 19.
-    zoom: 7
-  });
+function map() {
+  const contactsMap = document.querySelector(".mapW");
+  if (contactsMap) {
+    function init() {
+      const center = JSON.parse(contactsMap.dataset.center);
+      const zoom = Number(contactsMap.dataset.zoom);
+      const placemark = new ymaps.Placemark(center, {
+        hintContent: "Собственный значок метки",
+        iconContent: "Это метка"
+      }, {
+        iconLayout: "default#image",
+        iconImageHref: "/wp-content/themes/organic/assets/img/logos/icon-map.svg",
+        iconImageSize: [82, 105]
+      });
+      const map = new ymaps.Map("map", {
+        center,
+        zoom
+      });
+      map.controls.remove("geolocationControl");
+      map.controls.remove("searchControl");
+      map.controls.remove("trafficControl");
+      map.controls.remove("typeSelector");
+      map.controls.remove("fullscreenControl");
+      map.controls.remove("zoomControl");
+      map.controls.remove("rulerControl");
+      map.behaviors.disable(["scrollZoom"]);
+      map.geoObjects.add(placemark);
+    }
+    ymaps.ready(init);
+  }
 }
 
+map();
