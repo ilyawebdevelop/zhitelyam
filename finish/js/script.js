@@ -17,6 +17,7 @@ window.onload = function () {
     const mySwiperContent = new Swiper(n, {
       slidesPerView: 1,
       spaceBetween: 20,
+      lazy: true,
       speed: 600,
       effect: 'fade',
       mousewheelControl: true,
